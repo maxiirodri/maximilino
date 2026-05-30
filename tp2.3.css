@@ -1,0 +1,96 @@
+.body{
+    background: linear-gradient(to right, #e0f7fa, #80deea);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+.header{
+    background-color: #24b9be;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+.section{
+    background-color: #ffffff;
+    border-radius: 10px; /* bordes redondeados */
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.section:hover{
+    transform: scale(1.02);
+}
+.footer{
+     background-color: #24b9be;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.boton{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+.boton:hover{
+    transform: scale(1.1);
+}
+.entrada{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid ;
+    font-family: Arial, sans-serif;
+    width: 300px;
+}
+.entrada2{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-family: Arial, sans-serif;
+    width: 300px;
+}
+.label{
+    margin-top: 10px;   
+}
+/* Tablets: entre 600px y 1023px */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .section {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .menu li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+/* Celulares: hasta 599px */
+@media (max-width: 599px) {
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+    .menu li {
+        display: block;      /* menú en columna */
+        margin: 5px 0;
+    }
+    .entrada, .entrada2 {
+        width: 100%;         /* inputs ocupan todo el ancho */
+    }
+    video, audio {
+        width: 100%;         /* multimedia se adapta */
+    }
+}
+img {
+    max-width: 100%;   /* nunca supera el ancho del contenedor */
+    height: auto;      /* mantiene proporción */
+    display: block;    /* evita espacios raros */
+    margin: 0 auto;    /* centra la imagen */
+}
